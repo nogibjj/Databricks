@@ -1,0 +1,22 @@
+artifact_path: model
+databricks_runtime: 10.4.x-cpu-ml-scala2.12
+flavors:
+  python_function:
+    env: conda.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    python_version: 3.8.10
+  sklearn:
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 0.24.1
+model_uuid: 97a59dd9cc6349eaa954c4d7795e0ed6
+run_id: b43b4e87d0664bda87e43eaa255e277d
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  type: dataframe
+signature:
+  inputs: '[{"name": "selected_text", "type": "string"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "object", "shape": [-1]}}]'
+utc_time_created: '2022-03-16 02:08:46.998425'
